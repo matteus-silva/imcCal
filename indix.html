@@ -5,28 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+        
+
     <title>Calculadora</title>
 </head>
 <body>
-
+    
     <form action="" class="calculadora">
-        <h1>Calculadora</h1>
+        <h1>Calculadora de IMC</h1>
 
-        <input id ="idade" type="text" name="idade" placeholder="Idade">
+        <input id = "altura" type="number" name="altura" placeholder="Altura">
         <br><br>
-        <input id = "altura" type="text" name="altura" placeholder="Altura">
+        <input id = "peso" type="number" name="peso" placeholder="Peso">
         <br><br>
-        <input id = "peso" type="text" name="peso" placeholder="Peso">
+        <textarea name="" id="text_area" cols="30" rows="5"></textarea>
         <br><br>
         <div class="button">
-            <input type="submit" id="button" value="calcular">
+            <button onclick="calculate()">Calcular</button>
+            <button onclick="limpar()">Limpar</button>
         </div>
 
-        <div class="reslut">
+        <div class="result">
             <span id="result"></span>
         </div>
 
+       
+        
     </form>
+    <script src="java.js"> defer </script>
     
+
 </body>
 </html>
