@@ -28,6 +28,7 @@ function calculate(){
 
 function limpar(){
     document.getElementById('text_area' ).value=""
-
+    document.getElementById('altura' ).value=""
+    document.getElementById('peso' ).value=""
 }
 
